@@ -14,6 +14,7 @@ import transmission from "../Images/transmission.svg"
 import stearing from "../Images/stearing.svg"
 import Engine from "../Images/Engine.svg"
 import GallarySlider from './GallarySlider';
+import { RWebShare } from "react-web-share";
 
 const SingleDetail = ({carByVin}) => {
     
@@ -25,8 +26,22 @@ const SingleDetail = ({carByVin}) => {
                     <BsArrowLeftCircle size={36} fill="#FF8800" className="shadow-[0px_8px_16px_-6px_rgba(254,110,6,0.46)] rounded-full " /></a></Link>
                 </div>
                 <div className='flex flex-col gap-[8px] '>
-                    <div className='font-[700] text-[32px] leading-[44px] text-[#28293D] '>
+                    <div className='flex gap-5 font-[700] text-[32px] leading-[44px] text-[#28293D] '>
                         <p>{carByVin?.year} {carByVin?.make} {carByVin?.model}</p>
+                        <RWebShare
+                            data={{
+                            text: "Like humans, flamingos make friends for life",
+                            url: "https://on.natgeo.com/2zHaNup",
+                            title: "Flamingos",
+                            }}
+                            onClick={() => console.log("shared successfully!")}
+                        >
+                            <div>
+                                <sup className='flex items-center px-[10px] py-[2px] rounded-[10px] shadow-[0px_8px_16px_-6px_rgba(254,110,6,0.46)]  bg-gradient-to-r from-[#FF8800] to-[#E63535]  text-[#FFFFFF] gap-[2px]'>
+                                    <button className='font-[500] text-[14px] leading-[24px] btn-text-cardShadow '>Share 🔗</button>
+                                </sup>
+                            </div>
+                        </RWebShare>
                     </div>
                     <div className=" font-[400] text-[12px] text-[#8F90A6] leading-[16px]">
                         <p>{carByVin?.dealership} • {carByVin?.milage} Mileage • {carByVin?.exterior_color}</p>
