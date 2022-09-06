@@ -13,7 +13,9 @@ const CarDetail = ({carByVin}) => {
     <Head>
       <meta name="og:image" content={carByVin[0].photos && carByVin[0].photos[0]} />
       <meta name="og:title" content={`${carByVin[0].make} ${carByVin[0].model}`} />
+      <meta name="og:title" property="og:title" content={`${carByVin[0].make} ${carByVin[0].model}`} />
       <meta name="og:description" content={`${carByVin[0].dealership} ${carByVin[0].exterior_color}`} />
+      <meta name="og:description" property="og:description" content={`${carByVin[0].dealership} ${carByVin[0].exterior_color}`} />
       <meta name="og:image:width" content="1200" />
       <meta name="og:image:height" content="630" />
     </Head> 
