@@ -31,7 +31,7 @@ export default function Home(props) {
         <meta property="og:type" name="og:type" content="website" />
         <meta property="og:site_name" name="og:site_name" content="autodigg" />
         <meta property="og:url" name="og:url" content="https://autodigg.vercel.app/" />  
-        <meta name="og:title" property="og:title" content="autodigg" />
+        <meta name="og:title" property="og:title" content="Autodigg" />
         <meta name="og:description" property="og:description" content="autodigg - New & Used Cars" />
 
        
