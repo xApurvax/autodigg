@@ -1,8 +1,6 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 import axios from 'axios'
-import Footer from '../Components/Footer'
-import Navbar from '../Components/Navbar'
 import SingleDetail from '../Components/SingleDetail'
 
 const CarDetail = ({carByVin}) => {
@@ -11,9 +9,7 @@ const CarDetail = ({carByVin}) => {
   // console.log(carByVin)
   return (
       <div className='max-w-[1520px] mx-auto'>
-        {/* <Navbar /> */}
         <SingleDetail carByVin={carByVin[0]}  />
-        {/* <Footer /> */}
     </div>
   )
 }
