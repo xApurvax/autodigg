@@ -36,7 +36,7 @@ export default function Home(props) {
 
        
         <link rel="apple-touch-icon" href="/favicon.ico" />
-        <meta name="og:image" property="og:image" content="https://autodigg.vercel.app/Images/site-img.png" />  
+        <meta name="og:image" property="og:image" content="https://autodigg.vercel.app/Images/siteimg.png" />  
         <link rel="canonical" href="https://autodigg.vercel.app/" />
            
       </Head>  
