@@ -30,9 +30,7 @@ const SingleDetail = ({carByVin}) => {
                         <p>{carByVin?.year} {carByVin?.make} {carByVin?.model}</p>
                         <RWebShare
                             data={{
-                            text: "Like humans, flamingos make friends for life",
-                            url: "https://on.natgeo.com/2zHaNup",
-                            title: "Flamingos",
+                            title: "Autodigg - Used & New Cars",
                             }}
                             onClick={() => console.log("shared successfully!")}
                         >
