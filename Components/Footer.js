@@ -22,17 +22,17 @@ const Footer = () => {
                 <section className="flex flex-col justify-between">
                     <section className="flex gap-[36px] justify-end">
                         <div>
-                            <FacebookShareButton quote='autodigg- Used & New Cars' hashtag='#autodigg' url="https://next-redux-cars.vercel.app/" >
+                            <FacebookShareButton quote='autodigg- Used & New Cars' hashtag='#autodigg' url="https://autodigg.vercel.app/" >
                                 <FaFacebook size={24} fill="#FFFFFF" />
                             </FacebookShareButton>
                         </div>
                         <div>
-                            <TwitterShareButton url="https://next-redux-cars.vercel.app/" >
+                            <TwitterShareButton url="https://autodigg.vercel.app/" >
                                 <FaTwitter size={24} fill="#FFFFFF" />
                             </TwitterShareButton>
                         </div>
                         <div>
-                            <InstapaperShareButton url="https://next-redux-cars.vercel.app/" >
+                            <InstapaperShareButton url="https://autodigg.vercel.app/" >
                                 <FaInstagram size={24} fill="#FFFFFF" />
                             </InstapaperShareButton>
                         </div>
