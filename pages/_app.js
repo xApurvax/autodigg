@@ -2,8 +2,7 @@ import { Provider } from 'react-redux'
 import '../styles/globals.css'
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
-import store from './Redux-store/store';
-import {wrapper} from "./Redux-store/store"
+import store from '../Redux-store/store';
 
 function MyApp({ Component, pageProps }) {
   return(
