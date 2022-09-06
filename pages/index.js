@@ -3,6 +3,7 @@ import axios from 'axios'
 import styles from '../styles/Home.module.css'
 import LandingDetails from '../Components/LandingDetails'
 import { useSelector } from 'react-redux'
+import Head from 'next/head'
 // import {wrapper} from "./Redux-store/store"
 // import {getAllCar,getCarCount,getMake,getModel,getBodyType,getExtColor,getIntColor,getTransmission,getDriveTrain,getFuelType,getFeatures,getCarByType} from "./Redux-store/homePageSlice"
 
@@ -22,13 +23,31 @@ export default function Home(props) {
   const { make ,model ,bodyType,exteriorColor,interiorColor,driveTrain,allCar,count,transmission,fuelType,features } = useSelector((state) => state.homePageSlice)
  
   return (
-    <div className={`flex justify-center items-center ${styles.container}`}>
-    <div className='w-[1520px]'>
-      {/* <Navbar />  */}
-      <LandingDetails props={props}  />
-      {/* <Footer /> */}
-    </div>
-    </div>
+    <>
+      <Head>
+        <meta name="title" content='autodigg'/>        
+        <meta name="og:title" content='autodigg  - New & Used Cars'/> 
+
+        <meta property="og:type" name="og:type" content="website" />
+        <meta property="og:site_name" name="og:site_name" content="autodigg" />
+        <meta property="og:url" name="og:url" content="https://autodigg.vercel.app/" />  
+        <meta name="og:title" property="og:title" content="My cars project" />
+        <meta name="og:description" property="og:description" content="autodigg - New & Used Cars" />
+
+       
+        <link rel="apple-touch-icon" href="/favicon.ico" />
+        <meta name="og:image" property="og:image" content="https://autodigg.vercel.app/" />  
+        <link rel="canonical" href="https://autodigg.vercel.app/" />
+           
+      </Head>  
+      <div className={`flex justify-center items-center ${styles.container}`}>
+      <div className='w-[1520px]'>
+        {/* <Navbar />  */}
+        <LandingDetails props={props}  />
+        {/* <Footer /> */}
+      </div>
+      </div>
+    </>
   )
 }
 
